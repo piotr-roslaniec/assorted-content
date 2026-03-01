@@ -1,0 +1,19 @@
+# Week 9 — 2026-03-01
+
+## Personal Commentary
+
+This week's readings converge on agentic software engineering — both the practical patterns emerging around it and the cognitive costs of delegating too much. The field is maturing fast but adoption is still very limited outside of loud social media outlets and a few big tech companies that have already embraced it; most of the work is still driven by experimentation and performed by hobbyists. Willison's series is a good primer on the growing field. The ThoughtWorks Radar is opinionated as always, but the contributors are sensible people — I've found their perspectives very balanced and productive in the past. The Vasilopoulos paper reads surprisingly well for an academic paper; I recommend at least skimming the whole thing. On the other side, Wojcik and Pagade raise uncomfortable questions about what we lose when velocity outpaces comprehension.
+
+## Agentic Engineering
+
+- **[Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)** — Simon Willison's ongoing series documenting patterns for professional developers using coding agents. Explicitly distinct from "vibe coding" — this is about experienced engineers leveraging agents effectively. Early chapters cover how near-zero code generation costs reshape workflows and how red/green TDD helps agents produce more reliable output. Released as a living guide, 1-2 chapters per week.
+
+- **[Thoughtworks Technology Radar Vol. 33](https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2025/11/tr_technology_radar_vol_33_en.pdf)** — The four themes this edition: infrastructure automation for AI, rise of agents elevated by MCP, AI coding workflows, and emerging AI antipatterns. Notably, "vibe coding" has practically vanished as a focus — the industry is shifting toward context engineering, agentic systems, and serious thinking about infrastructure and security. Recommend reading the Themes section (page 7) and skimming the rest.
+
+- **[Codified Context: Infrastructure for AI Agents in a Complex Codebase](https://arxiv.org/abs/2602.20478)** — Aristidis Vasilopoulos presents a structured approach to context engineering for large, mature projects. The key idea: split typical AGENTS.md files into a hierarchical structure — a "hot-memory constitution" for conventions, specialized domain-expert agents, and a cold-memory knowledge base. Built and validated over 283 development sessions on a 108k-line C# codebase. Abstract + introduction + conclusion give you the gist, but the full paper reads well.
+
+## AI & Cognition
+
+- **[What AI Coding Costs You](https://tomwojcik.com/posts/2026-02-15/finding-the-right-amount-of-ai/)** — Tom Wojcik argues that AI coding tools create invisible cognitive costs not captured in productivity metrics. Developers who only review AI output score 17% lower on debugging and conceptual understanding. Identifies a seniority pipeline problem — juniors produce senior-level code without understanding it — and a review paradox where AI use erodes the skills needed to review AI output. The healthiest pattern: developers who stay cognitively engaged by asking AI for explanations rather than fully delegating.
+
+- **[Cognitive Debt: When Velocity Exceeds Comprehension](https://www.rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension/)** — Ganesh Pagade coins "cognitive debt" — the gap between what code does and who understands why. AI-assisted development decouples production from comprehension. Key failure modes: measurement systems reward throughput but can't measure comprehension, code generation outpaces senior review capacity, and tacit organizational knowledge fails to accumulate. Problems surface later as longer incident response times and a depleted senior engineer pipeline.

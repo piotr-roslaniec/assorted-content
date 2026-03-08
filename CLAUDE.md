@@ -9,6 +9,11 @@ This repo collects weekly one-pagers of assorted content on software engineering
 - Organize entries by topic within each one-pager
 - Use `TEMPLATE.md` as the base for each new week
 
+## Directory Structure
+
+- `data/<year>/week-<N>.md` — Raw input: unstructured notes, links, and commentary collected during the week. **Never overwrite these files.** They are the user's working scratchpad.
+- `<year>/week-<N>.md` — Shaped output: the finished one-pager. Create new files here when shaping raw input into a one-pager.
+
 ## Guidelines
 
 - Descriptions should be 1-3 sentences — capture the key insight or takeaway
